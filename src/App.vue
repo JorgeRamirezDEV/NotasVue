@@ -1,23 +1,20 @@
 <template>
   <div id="app">
-    <Cabecera/>
+    <header/>
     <Notas/>
-    <Pie/>
   </div>
 </template>
 
 <script>
 
-import Cabecera from './components/cabecera.vue'
+import header from './components/header.vue'
 import Notas from './components/notas.vue'
-import Pie from './components/pie.vue'
 
 export default {
   name: 'App',
   components: {
-    Cabecera,
-    Notas,
-    Pie
+    header,
+    Notas
   }
 }
 </script>
