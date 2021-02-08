@@ -26,7 +26,7 @@ export default {
   body{
     margin: 0;
     padding: 0;
-    background: cyan;
+    background: white;
     font-family: sans-serif;
     text-align: center;
   }

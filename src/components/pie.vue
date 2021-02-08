@@ -1,7 +1,7 @@
 <template lang="html">
 
   <section class="pie">
-    <p>&#169; 2021 Mario López Ruiz</p>
+    <p>Jorge Ramírez Molina</p>
   </section>
 
 </template>
@@ -34,7 +34,7 @@
   .pie {
     text-align: center;
     position: absolute;
-    top: 90%;
-    left: 50%;
+    top: 93%;
+    left: 5%;
   }
 </style>

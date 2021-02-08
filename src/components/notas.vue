@@ -4,7 +4,7 @@
     <div class="box">
       <form>
         <input type="text" v-on:keyup.enter="anadirElemento" v-on:keyup="teclaPulsada" v-model="input">
-        <input type="button" v-bind:disabled="isButtonDisabled" v-on:click="anadirElemento" value="Añadir a la Lista">
+        <input type="button" v-bind:disabled="isButtonDisabled" v-on:click="anadirElemento" value="Añadir a lista">
       </form>
     </div>
     <div class="cuerpo">
@@ -151,24 +151,22 @@
     background: #fff;
     width: 30vw;
     height: 50px;
-    border: none;
+    border: 1px solid black;
+    border-radius: 10px;    
     outline: none;
     padding: 0 25px;
-    border-radius: 25px 0 0 25px;
   }
   .box input[type="button"]{
     left: -5px;
     position: relative;
-    border-radius: 0 25px 25px 0;
-    width: 10vw;
+    width: 150px;
     height: 50px;
+    border-radius: 10px;   
     border: none;
     outline: none;
     cursor: pointer;
-    background: #ffc107;
-    color: #fff;
-  }
-  .box input[type="button"]:hover{
-    background: green;
+    background: red;
+    color: white;
+    margin-left: 10px;
   }
 </style>
