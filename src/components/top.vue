@@ -1,6 +1,6 @@
 <template lang="html">
 
-  <section class="cabecera">
+  <section class="top">
     <h1>Recordatorio Notas</h1>
   </section>
 
@@ -9,7 +9,7 @@
 <script lang="js">
 
   export default  {
-    name: 'header',
+    name: 'top',
     props: [],
     mounted () {
 
@@ -31,7 +31,7 @@
 </script>
 
 <style scoped>
-  .header {
+  .top {
     text-align: center;
   }
 </style>

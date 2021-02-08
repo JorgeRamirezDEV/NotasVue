@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <header/>
+    <top/>
     <Notas/>
   </div>
 </template>
 
 <script>
 
-import header from './components/header.vue'
+import top from './components/top.vue'
 import Notas from './components/notas.vue'
 
 export default {
   name: 'App',
   components: {
-    header,
+    top,
     Notas
   }
 }
