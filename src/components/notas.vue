@@ -1,6 +1,7 @@
 <template lang="html">
 
   <section class="notas">
+  
     <div class="box">
       <form>
         <input type="text" v-on:keyup.enter="anadirElemento" v-on:keyup="teclaPulsada" v-model="input">
@@ -21,12 +22,20 @@
         </li>
       </ol>
     </div>
+    <div class="buttons">
+    
+    <input type="button" value="Login" v-on:click="login">
+    <input type="button" value="Logout" v-on:click="logout">
+    </div>
     
   </section>
 
 </template>
 
 <script lang="js">
+
+// import {db} from "../db.js"
+import firebase from "../db.js"
 
   export default  {
     name: 'notas',
@@ -74,6 +83,12 @@
       },
       actualizarLocalStorage: function () {
         localStorage.listaTareas = JSON.stringify(this.todos);
+      },
+      login(){
+        firebase.login();
+      },
+      logout(){
+        firebase.logout();
       }
     },
     computed: {
@@ -168,5 +183,22 @@
     background: red;
     color: white;
     margin-left: 10px;
+  }
+
+  .buttons {
+    position: absolute;
+    left: 45%;
+    top:  42%;
+  }
+
+  .buttons input {
+    background-color: red;
+    border-radius: 10px;   
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
   }
 </style>
